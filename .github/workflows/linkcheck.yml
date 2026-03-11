@@ -1,0 +1,11 @@
+name: Check links
+on: push
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: filiph/linkcheck@3.0.0
+        with:
+          arguments: https://macaulay2.com/
+
